@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yKE-PI-up3">
+    <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Kids Joy Center-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="kids_joy_center" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5s-vc-J4m">
+                                <rect key="frame" x="412" y="172" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="jWd-ny-jXI"/>
+                                    <constraint firstAttribute="height" constant="200" id="rt7-jY-9Dw"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="sortingGame"/>
+                                <connections>
+                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vJc-YT-dqO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZ1-an-lQd">
+                                <rect key="frame" x="162" y="172" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="23V-Qn-nyb"/>
+                                    <constraint firstAttribute="width" constant="200" id="Mvv-xB-gFb"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="matchingGame"/>
+                                <connections>
+                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q4Y-Bz-KWV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVF-0r-ZV0">
+                                <rect key="frame" x="662" y="172" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="2W5-zC-PDG"/>
+                                    <constraint firstAttribute="width" constant="200" id="mXg-98-EWG"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="poppingGame"/>
+                                <connections>
+                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GqA-A7-SYW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivs-nX-Of0">
+                                <rect key="frame" x="237" y="468" width="150" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="uM2-Ts-aGF"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Easy">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="difficultyButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fht-Lg-YtE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lpp-WA-yny">
+                                <rect key="frame" x="437" y="468" width="150" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="DCe-nl-Zr2"/>
+                                    <constraint firstAttribute="width" constant="150" id="vw3-Yh-Qgv"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Normal">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="difficultyButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Dk-q5-8Hk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbg-O8-hLQ">
+                                <rect key="frame" x="637" y="468" width="150" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Mwl-FM-0w4"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Hard">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="difficultyButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Osy-cH-HuF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIi-pc-0OV">
+                                <rect key="frame" x="237" y="618" width="550" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="iaf-5l-vli"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="play.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="playButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eu3-Pb-xov"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="a5s-vc-J4m" firstAttribute="leading" secondItem="PZ1-an-lQd" secondAttribute="trailing" constant="50" id="3Xl-Jc-tK9"/>
+                            <constraint firstItem="Lpp-WA-yny" firstAttribute="bottom" secondItem="ivs-nX-Of0" secondAttribute="bottom" id="3eo-xe-Vsw"/>
+                            <constraint firstItem="lVF-0r-ZV0" firstAttribute="leading" secondItem="a5s-vc-J4m" secondAttribute="trailing" constant="50" id="4uT-ZD-hU1"/>
+                            <constraint firstItem="lVF-0r-ZV0" firstAttribute="bottom" secondItem="PZ1-an-lQd" secondAttribute="bottom" id="9Or-04-D8l"/>
+                            <constraint firstItem="ivs-nX-Of0" firstAttribute="top" secondItem="Lpp-WA-yny" secondAttribute="top" id="CYB-CV-CRa"/>
+                            <constraint firstItem="Lpp-WA-yny" firstAttribute="top" relation="greaterThanOrEqual" secondItem="a5s-vc-J4m" secondAttribute="bottom" constant="50" id="CxN-nK-7vF"/>
+                            <constraint firstItem="hbg-O8-hLQ" firstAttribute="trailing" secondItem="eIi-pc-0OV" secondAttribute="trailing" id="GSW-DP-etc"/>
+                            <constraint firstItem="eIi-pc-0OV" firstAttribute="leading" secondItem="ivs-nX-Of0" secondAttribute="leading" id="L8G-m3-J9e"/>
+                            <constraint firstItem="eIi-pc-0OV" firstAttribute="top" secondItem="Lpp-WA-yny" secondAttribute="bottom" constant="50" id="QI3-LR-bQW"/>
+                            <constraint firstItem="lVF-0r-ZV0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Ss5-uH-1ew"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerX" secondItem="a5s-vc-J4m" secondAttribute="centerX" id="UMd-Ck-KcJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lVF-0r-ZV0" secondAttribute="trailing" constant="50" id="WjF-ia-CH2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eIi-pc-0OV" secondAttribute="bottom" constant="50" id="ZQw-0T-Q6E"/>
+                            <constraint firstItem="PZ1-an-lQd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="ajw-em-S5f"/>
+                            <constraint firstItem="hbg-O8-hLQ" firstAttribute="leading" secondItem="Lpp-WA-yny" secondAttribute="trailing" constant="50" id="eLq-FM-iec"/>
+                            <constraint firstItem="a5s-vc-J4m" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="f32-78-bNT"/>
+                            <constraint firstItem="PZ1-an-lQd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="gUc-lV-Xh0"/>
+                            <constraint firstItem="Lpp-WA-yny" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gxA-cP-UI2"/>
+                            <constraint firstItem="hbg-O8-hLQ" firstAttribute="top" secondItem="Lpp-WA-yny" secondAttribute="top" id="hmS-BB-Gjn"/>
+                            <constraint firstItem="Lpp-WA-yny" firstAttribute="leading" secondItem="ivs-nX-Of0" secondAttribute="trailing" constant="50" id="lQO-dj-j7v"/>
+                            <constraint firstItem="Lpp-WA-yny" firstAttribute="bottom" secondItem="hbg-O8-hLQ" secondAttribute="bottom" id="yfB-RP-aKz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Kids Joy Center" id="JQv-Sf-l8b">
+                        <barButtonItem key="rightBarButtonItem" style="done" id="m3Q-WU-uUm">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="1Q3-VH-NZB">
+                                <rect key="frame" x="777" y="8" width="227" height="34.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Reset High Scores"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Reset High Scores"/>
+                                <connections>
+                                    <action selector="resetButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lG8-Zb-7f6"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="easyButton" destination="ivs-nX-Of0" id="7Ft-rj-som"/>
+                        <outlet property="hardButton" destination="hbg-O8-hLQ" id="etv-K5-4hI"/>
+                        <outlet property="matchingButton" destination="PZ1-an-lQd" id="cbg-5k-yZ5"/>
+                        <outlet property="normalButton" destination="Lpp-WA-yny" id="D94-2T-iBH"/>
+                        <outlet property="playButton" destination="eIi-pc-0OV" id="IXV-Yb-XkH"/>
+                        <outlet property="poppingButton" destination="lVF-0r-ZV0" id="T4V-Sh-OZO"/>
+                        <outlet property="sortingButton" destination="a5s-vc-J4m" id="UJa-Wa-uDL"/>
+                        <segue destination="QIF-72-adC" kind="show" identifier="game1" id="q8u-XI-TKN"/>
+                        <segue destination="Gmh-lS-Ceh" kind="show" identifier="game2" id="mGo-z5-s2Z"/>
+                        <segue destination="GEZ-9t-ca3" kind="show" identifier="game3" id="GZj-c5-Vvd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="863.0859375" y="121.875"/>
+        </scene>
+        <!--MatchingGame-->
+        <scene sceneID="siD-9v-HgU">
+            <objects>
+                <viewController title="MatchingGame" id="QIF-72-adC" customClass="MatchingGame" customModule="kids_joy_center" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YyM-Fe-hzZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="byX-iX-EdA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Matching Game" id="tzn-iM-1dg"/>
+                    <connections>
+                        <segue destination="015-fu-Wub" kind="presentation" identifier="highScoreSegue" id="Ar6-HN-24Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tfd-iA-gCJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1593" y="-550"/>
+        </scene>
+        <!--PoppingGame-->
+        <scene sceneID="Bsr-zi-dUC">
+            <objects>
+                <viewController title="PoppingGame" id="GEZ-9t-ca3" customClass="PoppingGame" customModule="kids_joy_center" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gmg-pB-fuk">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="RTK-NX-IAS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Popping Game" id="Uev-pb-rcl"/>
+                    <connections>
+                        <segue destination="015-fu-Wub" kind="presentation" identifier="highScoreSegue" id="TEw-9l-hx4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vFw-Iv-bnl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1592.578125" y="803.90625"/>
+        </scene>
+        <!--SortingGame-->
+        <scene sceneID="BIh-Tb-Yom">
+            <objects>
+                <viewController title="SortingGame" id="Gmh-lS-Ceh" customClass="SortingGame" customModule="kids_joy_center" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XC7-bP-Nvv">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="EVG-8c-1tu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sorting Game" id="ZfH-tb-3hx"/>
+                    <connections>
+                        <segue destination="015-fu-Wub" kind="presentation" identifier="highScoreSegue" id="ntK-yf-yCx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ssh-m5-GGU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1593" y="122"/>
+        </scene>
+        <!--High Scores-->
+        <scene sceneID="YCz-aq-V8h">
+            <objects>
+                <viewController title="High Scores" id="015-fu-Wub" customClass="HighScores" customModule="kids_joy_center" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CQk-It-J3X">
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="728"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="w9i-zr-9KM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Yzd-Bo-gce"/>
+                    <connections>
+                        <segue destination="fCg-4s-f1d" kind="unwind" identifier="unwind" unwindAction="unwindSegue:" id="cUT-0K-Djq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AYb-Mi-Efs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="fCg-4s-f1d" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2269.921875" y="121.875"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Vjm-mc-0ql">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yKE-PI-up3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="FMp-CL-ca4">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="102"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="GhS-8s-YFn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="saP-mu-1PR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.8671875" y="121.875"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="TEw-9l-hx4"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="matchingGame" width="100" height="100"/>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
+        <image name="poppingGame" width="100" height="100"/>
+        <image name="sortingGame" width="100" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

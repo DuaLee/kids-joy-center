@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E8352AC227F04D7100325C1D /* pickup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8352AC027F04D7100325C1D /* pickup.mp3 */; };
+		E8352AC327F04D7100325C1D /* place.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8352AC127F04D7100325C1D /* place.mp3 */; };
+		E8352AC527F2615D00325C1D /* pop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8352AC427F2615D00325C1D /* pop.mp3 */; };
+		E8352AC727F32E5700325C1D /* Balloon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8352AC627F32E5700325C1D /* Balloon.swift */; };
+		E8352AC927F3777C00325C1D /* HighScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8352AC827F3777C00325C1D /* HighScore.swift */; };
+		E8352ACD27F3FA2900325C1D /* boom.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8352ACC27F3FA2900325C1D /* boom.mp3 */; };
+		E8352ACF27F407A500325C1D /* whoosh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8352ACE27F407A500325C1D /* whoosh.mp3 */; };
+		E8352AD327F40C3300325C1D /* marimbaE.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8352AD027F40C3300325C1D /* marimbaE.mp3 */; };
+		E8352AD427F40C3300325C1D /* marimbaD.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8352AD127F40C3300325C1D /* marimbaD.mp3 */; };
+		E8352AD527F40C3300325C1D /* marimbaC.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8352AD227F40C3300325C1D /* marimbaC.mp3 */; };
+		E87D742727EFC77200AA45CF /* flip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E87D742627EFC77200AA45CF /* flip.mp3 */; };
+		E87D742927EFD2F000AA45CF /* match.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E87D742827EFD2F000AA45CF /* match.mp3 */; };
+		E87D742B27EFD50C00AA45CF /* GSAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87D742A27EFD50C00AA45CF /* GSAudio.swift */; };
+		E87D743127F0026D00AA45CF /* HighScores.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87D743027F0026D00AA45CF /* HighScores.swift */; };
+		E87D743427F017F900AA45CF /* win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E87D743227F017F900AA45CF /* win.mp3 */; };
+		E87D743527F017F900AA45CF /* lose.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E87D743327F017F900AA45CF /* lose.mp3 */; };
+		E87D743727F018C400AA45CF /* swipe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E87D743627F018C400AA45CF /* swipe.mp3 */; };
+		E87D743B27F030A300AA45CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E87D743A27F030A200AA45CF /* Assets.xcassets */; };
+		E8B00E7827EE4C4500F72C25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B00E7727EE4C4500F72C25 /* AppDelegate.swift */; };
+		E8B00E7A27EE4C4500F72C25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B00E7927EE4C4500F72C25 /* SceneDelegate.swift */; };
+		E8B00E7C27EE4C4500F72C25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B00E7B27EE4C4500F72C25 /* ViewController.swift */; };
+		E8B00E7F27EE4C4500F72C25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8B00E7D27EE4C4500F72C25 /* Main.storyboard */; };
+		E8B00E8427EE4C4600F72C25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8B00E8227EE4C4600F72C25 /* LaunchScreen.storyboard */; };
+		E8B00E8C27EE568000F72C25 /* MatchingGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B00E8B27EE568000F72C25 /* MatchingGame.swift */; };
+		E8B00E8E27EE569800F72C25 /* SortingGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B00E8D27EE569800F72C25 /* SortingGame.swift */; };
+		E8B00E9027EE56A600F72C25 /* PoppingGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B00E8F27EE56A600F72C25 /* PoppingGame.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E8352AC027F04D7100325C1D /* pickup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pickup.mp3; sourceTree = "<group>"; };
+		E8352AC127F04D7100325C1D /* place.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = place.mp3; sourceTree = "<group>"; };
+		E8352AC427F2615D00325C1D /* pop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pop.mp3; sourceTree = "<group>"; };
+		E8352AC627F32E5700325C1D /* Balloon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balloon.swift; sourceTree = "<group>"; };
+		E8352AC827F3777C00325C1D /* HighScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScore.swift; sourceTree = "<group>"; };
+		E8352ACC27F3FA2900325C1D /* boom.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = boom.mp3; sourceTree = "<group>"; };
+		E8352ACE27F407A500325C1D /* whoosh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = whoosh.mp3; sourceTree = "<group>"; };
+		E8352AD027F40C3300325C1D /* marimbaE.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = marimbaE.mp3; sourceTree = "<group>"; };
+		E8352AD127F40C3300325C1D /* marimbaD.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = marimbaD.mp3; sourceTree = "<group>"; };
+		E8352AD227F40C3300325C1D /* marimbaC.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = marimbaC.mp3; sourceTree = "<group>"; };
+		E87D742627EFC77200AA45CF /* flip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = flip.mp3; sourceTree = "<group>"; };
+		E87D742827EFD2F000AA45CF /* match.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = match.mp3; sourceTree = "<group>"; };
+		E87D742A27EFD50C00AA45CF /* GSAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSAudio.swift; sourceTree = "<group>"; };
+		E87D743027F0026D00AA45CF /* HighScores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScores.swift; sourceTree = "<group>"; };
+		E87D743227F017F900AA45CF /* win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = win.mp3; sourceTree = "<group>"; };
+		E87D743327F017F900AA45CF /* lose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lose.mp3; sourceTree = "<group>"; };
+		E87D743627F018C400AA45CF /* swipe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = swipe.mp3; sourceTree = "<group>"; };
+		E87D743A27F030A200AA45CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8B00E7427EE4C4500F72C25 /* kids-joy-center.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kids-joy-center.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8B00E7727EE4C4500F72C25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E8B00E7927EE4C4500F72C25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E8B00E7B27EE4C4500F72C25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E8B00E7E27EE4C4500F72C25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E8B00E8327EE4C4600F72C25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E8B00E8527EE4C4600F72C25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8B00E8B27EE568000F72C25 /* MatchingGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingGame.swift; sourceTree = "<group>"; };
+		E8B00E8D27EE569800F72C25 /* SortingGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingGame.swift; sourceTree = "<group>"; };
+		E8B00E8F27EE56A600F72C25 /* PoppingGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoppingGame.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8B00E7127EE4C4500F72C25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E87D742527EFC75900AA45CF /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				E87D742A27EFD50C00AA45CF /* GSAudio.swift */,
+				E87D742627EFC77200AA45CF /* flip.mp3 */,
+				E87D742827EFD2F000AA45CF /* match.mp3 */,
+				E87D743327F017F900AA45CF /* lose.mp3 */,
+				E87D743227F017F900AA45CF /* win.mp3 */,
+				E87D743627F018C400AA45CF /* swipe.mp3 */,
+				E8352AC027F04D7100325C1D /* pickup.mp3 */,
+				E8352AC127F04D7100325C1D /* place.mp3 */,
+				E8352AC427F2615D00325C1D /* pop.mp3 */,
+				E8352ACC27F3FA2900325C1D /* boom.mp3 */,
+				E8352ACE27F407A500325C1D /* whoosh.mp3 */,
+				E8352AD227F40C3300325C1D /* marimbaC.mp3 */,
+				E8352AD127F40C3300325C1D /* marimbaD.mp3 */,
+				E8352AD027F40C3300325C1D /* marimbaE.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		E8B00E6B27EE4C4500F72C25 = {
+			isa = PBXGroup;
+			children = (
+				E8B00E7627EE4C4500F72C25 /* kids-joy-center */,
+				E8B00E7527EE4C4500F72C25 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E8B00E7527EE4C4500F72C25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8B00E7427EE4C4500F72C25 /* kids-joy-center.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8B00E7627EE4C4500F72C25 /* kids-joy-center */ = {
+			isa = PBXGroup;
+			children = (
+				E87D742527EFC75900AA45CF /* Sounds */,
+				E8B00E7727EE4C4500F72C25 /* AppDelegate.swift */,
+				E8B00E7927EE4C4500F72C25 /* SceneDelegate.swift */,
+				E8B00E7B27EE4C4500F72C25 /* ViewController.swift */,
+				E8B00E7D27EE4C4500F72C25 /* Main.storyboard */,
+				E87D743A27F030A200AA45CF /* Assets.xcassets */,
+				E8B00E8227EE4C4600F72C25 /* LaunchScreen.storyboard */,
+				E8B00E8527EE4C4600F72C25 /* Info.plist */,
+				E8B00E8B27EE568000F72C25 /* MatchingGame.swift */,
+				E8B00E8D27EE569800F72C25 /* SortingGame.swift */,
+				E8B00E8F27EE56A600F72C25 /* PoppingGame.swift */,
+				E8352AC627F32E5700325C1D /* Balloon.swift */,
+				E87D743027F0026D00AA45CF /* HighScores.swift */,
+				E8352AC827F3777C00325C1D /* HighScore.swift */,
+			);
+			path = "kids-joy-center";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8B00E7327EE4C4500F72C25 /* kids-joy-center */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8B00E8827EE4C4600F72C25 /* Build configuration list for PBXNativeTarget "kids-joy-center" */;
+			buildPhases = (
+				E8B00E7027EE4C4500F72C25 /* Sources */,
+				E8B00E7127EE4C4500F72C25 /* Frameworks */,
+				E8B00E7227EE4C4500F72C25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "kids-joy-center";
+			productName = "kids-joy-center";
+			productReference = E8B00E7427EE4C4500F72C25 /* kids-joy-center.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8B00E6C27EE4C4500F72C25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					E8B00E7327EE4C4500F72C25 = {
+						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1330;
+					};
+				};
+			};
+			buildConfigurationList = E8B00E6F27EE4C4500F72C25 /* Build configuration list for PBXProject "kids-joy-center" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8B00E6B27EE4C4500F72C25;
+			productRefGroup = E8B00E7527EE4C4500F72C25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8B00E7327EE4C4500F72C25 /* kids-joy-center */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8B00E7227EE4C4500F72C25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8B00E8427EE4C4600F72C25 /* LaunchScreen.storyboard in Resources */,
+				E87D742927EFD2F000AA45CF /* match.mp3 in Resources */,
+				E8352AC327F04D7100325C1D /* place.mp3 in Resources */,
+				E87D742727EFC77200AA45CF /* flip.mp3 in Resources */,
+				E8352AD427F40C3300325C1D /* marimbaD.mp3 in Resources */,
+				E8352AD327F40C3300325C1D /* marimbaE.mp3 in Resources */,
+				E8352AD527F40C3300325C1D /* marimbaC.mp3 in Resources */,
+				E87D743427F017F900AA45CF /* win.mp3 in Resources */,
+				E8352AC527F2615D00325C1D /* pop.mp3 in Resources */,
+				E8B00E7F27EE4C4500F72C25 /* Main.storyboard in Resources */,
+				E87D743527F017F900AA45CF /* lose.mp3 in Resources */,
+				E8352AC227F04D7100325C1D /* pickup.mp3 in Resources */,
+				E87D743B27F030A300AA45CF /* Assets.xcassets in Resources */,
+				E8352ACF27F407A500325C1D /* whoosh.mp3 in Resources */,
+				E87D743727F018C400AA45CF /* swipe.mp3 in Resources */,
+				E8352ACD27F3FA2900325C1D /* boom.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8B00E7027EE4C4500F72C25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E87D742B27EFD50C00AA45CF /* GSAudio.swift in Sources */,
+				E8B00E7C27EE4C4500F72C25 /* ViewController.swift in Sources */,
+				E87D743127F0026D00AA45CF /* HighScores.swift in Sources */,
+				E8B00E8E27EE569800F72C25 /* SortingGame.swift in Sources */,
+				E8352AC927F3777C00325C1D /* HighScore.swift in Sources */,
+				E8352AC727F32E5700325C1D /* Balloon.swift in Sources */,
+				E8B00E7827EE4C4500F72C25 /* AppDelegate.swift in Sources */,
+				E8B00E9027EE56A600F72C25 /* PoppingGame.swift in Sources */,
+				E8B00E8C27EE568000F72C25 /* MatchingGame.swift in Sources */,
+				E8B00E7A27EE4C4500F72C25 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E8B00E7D27EE4C4500F72C25 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8B00E7E27EE4C4500F72C25 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E8B00E8227EE4C4600F72C25 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8B00E8327EE4C4600F72C25 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E8B00E8627EE4C4600F72C25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E8B00E8727EE4C4600F72C25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8B00E8927EE4C4600F72C25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8B4QBLLSCD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "kids-joy-center/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lee.kids-joy-center";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		E8B00E8A27EE4C4600F72C25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8B4QBLLSCD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "kids-joy-center/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lee.kids-joy-center";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8B00E6F27EE4C4500F72C25 /* Build configuration list for PBXProject "kids-joy-center" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8B00E8627EE4C4600F72C25 /* Debug */,
+				E8B00E8727EE4C4600F72C25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8B00E8827EE4C4600F72C25 /* Build configuration list for PBXNativeTarget "kids-joy-center" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8B00E8927EE4C4600F72C25 /* Debug */,
+				E8B00E8A27EE4C4600F72C25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8B00E6C27EE4C4500F72C25 /* Project object */;
+}
